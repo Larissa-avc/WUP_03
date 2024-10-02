@@ -49,7 +49,17 @@ the box plot shows drunks are mostly in the back seat.
 
 ## Numerical Summarys 
 
+```{r}
+favstats(alcohol~Seat,data=ucdavis1)
+```
+
+the average of those who seat in the back 55 is higher than the ones seated in the front 20
+
 ## Inferential Tests
+
+```{r}
+t.test(alcohol~Seat,data=ucdavis1)
+```
 
 ## Conclusions
 
