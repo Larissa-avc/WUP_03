@@ -58,8 +58,11 @@ the average of those who seat in the back 55 is higher than the ones seated in t
 ## Inferential Tests
 
 ```{r}
-t.test(alcohol~Seat,data=ucdavis1)
+model1 <- aov(alcohol~Seat,data=davisdata)
+summary.aov(model1)
 ```
+
+P value is 0.000116 which is lower than 0.05 so we reject the null hypothesis
 
 ## Conclusions
 
