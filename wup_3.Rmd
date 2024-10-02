@@ -25,7 +25,8 @@ between people conditioned on the row they sit in.
 $H_A$: The average number drinks is different between at least two rows.   
 
 alcohol is numerical 
-seat is categorical so we used helper file num~ cat 
+seat is categorical 
+so we used helper file num~ cat 
 
 ## Now with ggplot - first select the basic data
 
@@ -38,7 +39,8 @@ basicCN <- ggplot(davisdata,aes(y=alcohol,x=Seat))
 basicCN + geom_boxplot()
 ```
   
-  
+The boxlpot shows that one who sits in the back is affected the most by the numberof drinks they've had.
+
   
 ### get fancy  
 
@@ -69,6 +71,7 @@ plot(TukeyHSD(model1))
 
 P value is 0.000116 which is lower than 0.05 so we reject the null hypothesis
 
+The tukey shows that 
 ## Conclusions
 
-
+In conclusion there is a difference between the average number of drinks imbibed between people conditioned on the row they sit in. Which would be the middle seat.The helper file used was num~ cat.
