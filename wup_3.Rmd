@@ -22,7 +22,9 @@ I predict alcohol consumption based on where you sit
 $H_0$: There is no difference between the average number of drinks imbibed
 between people conditioned on the row they sit in.
 
-$H_A$: The average number drinks is different between at least two rows.   
+$H_A$: There is a difference between the average number of drinks imbibed
+between people conditioned on the row they sit in.
+
 
 alcohol is numerical 
 seat is categorical 
@@ -56,7 +58,7 @@ the box plot shows drunks are mostly in the back seat.
 favstats(alcohol~Seat,data=ucdavis1)
 ```
 
-the average of those who seat in the back 55 is higher than the ones seated in the front 20
+the average of those who seat in the back is 8.55. While the mean for those who sit in the front is 1.78 and the mean for the back is 3.33. Showing those who sit in the back row has had more drinks. 
 
 ## Inferential Tests
 
@@ -71,7 +73,7 @@ plot(TukeyHSD(model1))
 
 P value is 0.000116 which is lower than 0.05 so we reject the null hypothesis
 
-The tukey shows that 
 ## Conclusions
 
-In conclusion there is a difference between the average number of drinks imbibed between people conditioned on the row they sit in. Which would be the middle seat. The helper file used was num~ cat.
+In conclusion there is a difference between the average number of drinks consumed and the row you sit. So the null hypothesis is rejected since the P value is 0.000116 which is less than 0.05. 
+
