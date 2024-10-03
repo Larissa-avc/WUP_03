@@ -74,4 +74,4 @@ P value is 0.000116 which is lower than 0.05 so we reject the null hypothesis
 The tukey shows that 
 ## Conclusions
 
-In conclusion there is a difference between the average number of drinks imbibed between people conditioned on the row they sit in. Which would be the middle seat.The helper file used was num~ cat.
+In conclusion there is a difference between the average number of drinks imbibed between people conditioned on the row they sit in. Which would be the middle seat. The helper file used was num~ cat.
