@@ -67,11 +67,13 @@ model1 <- aov(alcohol~Seat,data=davisdata)
 summary.aov(model1)
 ```
 
+P value is 0.0001166 which is lower than 0.05. Therefore we reject the null hypothesis. 
+
 ```{r}
 plot(TukeyHSD(model1))
 ```
 
-P value is 0.000116 which is lower than 0.05 so we reject the null hypothesis
+Tukey shows that middle-front have no difference. The middle back and front back show that there is a difference due to 0 not being in the interval like midel- front is.
 
 ## Conclusions
 
